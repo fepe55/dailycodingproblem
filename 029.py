@@ -65,6 +65,9 @@ if __name__ == '__main__':
     decoded_string = decode(encoded_string)
     assert decoded_string == string
 
+    string = ''
+    assert decode(encode(string)) == string
+
     string = 'AAAAAAAAAABBBCCDAA'
     assert decode(encode(string)) == string
 
